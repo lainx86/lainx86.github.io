@@ -1,0 +1,72 @@
+/* Additional Utility Classes */
+
+/* Remove all text decorations */
+* {
+  text-decoration: none !important;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited,
+button,
+.btn,
+.button {
+  text-decoration: none !important;
+}
+
+/* Centering */
+.center-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center-xy {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Spacing after fixed nav */
+.nav-spacer {
+  height: 6rem;
+}
+
+@media (max-width: 768px) {
+  .nav-spacer {
+    height: 5rem;
+  }
+}
+
+/* Whitespace */
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+/* Additional glass morphism variants - redefined */
+.glass-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.75rem;
+}
+
+.glass-dark {
+  background: #000;
+  border: 1px solid var(--border-subtle);
+}
+
+/* Prevent content shift */
+body {
+  padding-top: 0 !important;
+}
+
+/* Smooth transitions */
+.smooth-transition {
+  transition: all 0.2s ease;
+}
